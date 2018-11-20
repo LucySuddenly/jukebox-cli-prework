@@ -59,7 +59,6 @@ def run
     end
     break if command == "exit"
   end 
-  
 end
 
 
