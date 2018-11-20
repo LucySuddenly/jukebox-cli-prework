@@ -38,4 +38,25 @@ def play(songs)
   end 
 end 
 
+def exit_jukebox
+  puts "Goodbye"
+end 
+
+def run
+  command =""
+  help
+  do while command != "exit"
+  puts "Please enter a command:"
+  command = gets.strip
+  if command == "list"
+    list
+  elsif command == "play"
+    play
+  elsif command == "help"
+    help
+  elsif command == "exit"
+    exit_jukebox
+  end 
+end
+
 
